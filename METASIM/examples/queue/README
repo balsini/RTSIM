@@ -1,0 +1,59 @@
+QUEUE EXAMPLE
+
+This example models a simple M/M/1 queue. This is just an example of
+how it it possible to use the basic classes provided by MetaSim for
+modeling a discrete event simulation. 
+
+FILES
+
+queue.hpp	definition of the main classes
+queue.cpp       the example file
+makefile	
+
+COMPILING
+
+After compiling the metasim library, enter the example/queue directory
+and simply type make. An executable file (queue under Linux and
+queue.exe under cygwin) will be produced. 
+
+RUNNING
+
+The program will ask you for two parameters: lambda (the avg service
+time) and mu (the avg interarrival time). Recall that in a M/M/1 queue
+the service times and the interarrivals are both exponentially
+distributed. 
+
+The program execute 20 simulation runs and compute the average queue
+lenght and the 98% confidence interval. 
+
+If you insert:
+
+lambda = 4
+mu = 8
+
+the result should be:
+
+>  The average length is 1.01568
+>  with a 98% confidence interval of 0.0363476 
+
+Recall the the formula for the average queue lenght is
+
+	avg = rho / (1 - rho)
+
+where 
+
+	rho = lambda / mu
+
+In this example, 20 simulation runs are done and every simulation run
+lasts for 50000 ticks: the results of the first 10000 ticks are not
+considered for computing the mean. If you want more accurate
+results, you must make longer simulations, or more simulation runs.
+
+
+
+
+
+
+
+
+

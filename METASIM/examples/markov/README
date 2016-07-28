@@ -1,0 +1,34 @@
+MARKOV EXAMPLE
+
+This example models a simple markov chain. This is just an example of
+how it is possible to use the basic classes provided by MetaSim for
+modeling a discrete event simulation. 
+
+FILES
+
+markov.hpp		definition of the main classes
+markov.cpp       	the example file
+makefile	
+
+COMPILING
+
+After compiling the metasim library, enter the example/markov directory
+and simply type make. An executable file (markov under Linux and
+markov.exe under cygwin) will be produced. 
+
+RUNNING
+
+The program will simulate a markov chain composed by three states. The 
+probability of changing state follows an exponential distribution. 
+
+The program executes 29 simulation runs and computes the average interval
+of time spent in state 2 and in state 1 and the 98% confidence interval. 
+
+
+
+
+
+
+
+
+

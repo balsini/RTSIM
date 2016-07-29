@@ -8,7 +8,7 @@ ExternalProject_Add (
     PREFIX METASIM
     SOURCE_DIR ${CMAKE_CURRENT_SOURCE_DIR}/METASIM
     INSTALL_COMMAND ""
-    )
+)
 
 ExternalProject_Add (
     RTLIB
